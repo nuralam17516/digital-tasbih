@@ -53,7 +53,7 @@ alhamdulillahDecrementBtn.addEventListener('click', function(){
 let allahuAkbarInitialValue = 0;
 allahuAkbarIncrementBtn.addEventListener('click', function(){
     if(allahuAkbarInitialValue === 34){
-        return alert('Allahu Akbar complete, Please start from Subhan Allah')
+        return alert('Allahu Akbar complete, Please start from "Subhan Allah".')
     }
 
     allahuAkbarInitialValue += 1;
@@ -67,4 +67,15 @@ allahuAkbarDecrementBtn.addEventListener('click', function(){
     }
     allahuAkbarInitialValue -= 1;
     allahuAkbarDisplay.innerText = allahuAkbarInitialValue
+})
+
+// ------resetbtn start-------
+
+resetBtn.addEventListener('click', function(){
+    subhanAllahDisplay.innerText = 0;
+    alhamdulillahDisplay.innerText = 0;
+    allahuAkbarDisplay.innerText = 0;
+    subhanAllahInitialValue = 0;
+    alhamdulillahInitialValue = 0;
+    allahuAkbarInitialValue = 0;
 })
